@@ -1,0 +1,172 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: Lobster;
+    src: url(font/Lobster-Regular.ttf);
+}
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+header {
+    height: 16vh;
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-image: linear-gradient(to top,#381211, #53201cf1,#b97922);
+    position: fixed;
+}
+header h1 {
+    font-size: 3em;
+    font-family:'Lobster';
+    color: white;
+    text-shadow: 0px 0px 15px #FF7F11;
+    cursor: pointer;
+    transform: rotate(340deg);
+    padding-bottom: 15px;
+}
+header span {
+    font-family: 'Lobster', cursive;
+    color: white;
+}
+nav ul {
+    width: 40vw;
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+}
+nav ul label {
+    color: white;
+    padding-left: 60px;
+    font-family: 'Lobster';
+}
+nav ul input {
+    border: none;
+    outline-style: none;
+    padding: 4px;
+    border-radius: 10px;
+    background-color:lightyellow;
+}
+nav li a {
+    padding: 5px;
+    text-decoration: none;
+    color: white;
+    font-family: 'Lobster';
+    font-size: 1.3em;
+}
+nav li a:hover {
+    color: #FF7F11;
+    text-shadow: 0px 0px 35px #FF7F11;
+    transition-duration: .5s;
+    text-decoration: underline;
+}
+section {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(imagens/central-paralax.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+section.paralax div {
+    padding-top: 33vh;
+    text-align: center;
+}
+section.paralax div h1 {
+    color: white;
+    font-family: 'Lobster';
+    font-size: 6em;
+    text-shadow: 0px 0px 25px #FF7F11;
+    padding-bottom: 10px;
+    animation:heartBeat;
+    animation-duration: 1.5s;
+    animation-iteration-count: 2;
+    
+}
+section.paralax div p {
+    color: white;
+    font-family: 'Lobster';
+    font-size: 1.5em;
+    padding: 50px;
+    
+}
+.botao {
+    color: white;
+    text-decoration: none;
+    font-size: 1.3em;
+    border-width: 1px;
+    border-style: groove;
+    padding: 10px 20px;
+    border-radius: 10px;
+    transition: padding .5s;
+}
+.botao:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    transition: .5s;
+    padding: 15px 55px;
+}
+.principal {
+    display: flex;
+    min-width: 200px;
+    height: 520vh;
+    justify-content: center;
+    background-position: center bottom;
+    background-image: linear-gradient(to bottom, #220d12,#542710, #a46720,#FF7F11);
+    background-size: cover;
+    background-repeat: none;
+}
+main.principal article.artigo img {
+    max-width: 25vw;
+    border-radius: 5px;
+    box-shadow:0px 0px 15px #220d12;
+}
+.principal article.artigo p {
+    width: 250px;
+    height: 250px;
+    text-align: justify;
+}
+.texto-artigo {
+    display: flex;
+    flex-direction: column;
+}
+.principal article.artigo {
+    display:flex;
+    flex-direction: column;
+    align-items:flex-start;
+    min-width: 80vw;
+    height: 510vh;
+    margin-top: 35px;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.3);
+    box-shadow: 0px 0px 30px -10px black;
+}
+.artigo div {
+    width:63vw ;
+    display: flex;
+    justify-content:space-between;
+    margin: 60px auto ;
+}
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 30px;
+    background-color:#53201cf1;
+    color: white;
+    padding-right: 40px;
+}
+footer p a {
+    color: #b97922;
+    text-decoration: none;
+}
+
+
+
+
+
+
